@@ -1,4 +1,5 @@
 public class OOPEx1 {
+
     public static void main(String[] args) {
         Student s1 = new Student();
         s1.age = 100;
@@ -22,25 +23,26 @@ public class OOPEx1 {
     }
 }
 
- class Student {
-    String name ;
-    int age ;
-    double score ;
-    public String  getResult(){
-        if (score > 100){
+class Student {
+    String name;
+    int age;
+    double score;
+
+    String getResult() {
+        if (score > 100) {
             return "A";
-        }else if (score > 80){
+        } else if (score > 80) {
             return "B";
-        }else if (score > 60){
+        } else if (score > 60) {
             return "C";
-        }else if (score > 40){
+        } else if (score > 40) {
             return "D";
-        }else {
+        } else {
             return "F";
         }
     }
+
     public void show() {
         System.out.println("Name: " + name + " Age: " + age + " Score: " + score);
     }
-    
 }
